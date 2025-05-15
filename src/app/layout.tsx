@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { AppThemeProvider } from "./providers/ThemeProvider";
@@ -46,12 +46,15 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  viewport: {
+};
+
+export function generateViewport(): Viewport {
+  return {
     width: "device-width",
     initialScale: 1,
-  },
-  themeColor: "#ffffff",
-};
+    themeColor: "#ffffff",
+  };
+}
 
 export default function RootLayout({
   children,
