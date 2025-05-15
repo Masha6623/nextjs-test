@@ -5,6 +5,6 @@ import { Theme as MuiTheme } from "@mui/material/styles";
 // to include the MuiTheme type.
 // This makes MuiTheme properties available on props.theme in styled-components.
 declare module "styled-components" {
-  // eslint-disable-next-line @typescript-eslint/no-empty-interface
+  // eslint-disable-next-line @typescript-eslint/no-empty-object-type
   export interface DefaultTheme extends MuiTheme {}
 }
