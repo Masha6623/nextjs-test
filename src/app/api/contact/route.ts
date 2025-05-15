@@ -8,7 +8,7 @@ interface ContactRequestBody {
 
 interface ContactResponseBody {
   message: string;
-  error?: string; // Optional error field
+  error?: string;
 }
 
 export async function POST(
@@ -25,7 +25,6 @@ export async function POST(
       );
     }
 
-    // TODO: Add more robust email validation if needed
     console.log("Form submission:", { name, email, message });
 
     return NextResponse.json(
@@ -34,7 +33,6 @@ export async function POST(
     );
   } catch (error) {
     console.error("Error processing form:", error);
-    // Check if error is an instance of Error to access message property safely
     const errorMessage =
       error instanceof Error ? error.message : "Unknown error";
     return NextResponse.json(

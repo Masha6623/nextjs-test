@@ -4,10 +4,6 @@ import { Container, Typography, Box, BoxProps, Button } from "@mui/material";
 import styled from "styled-components";
 import Link from "next/link";
 
-// interface StyledCallToActionBlockProps extends BoxProps {
-//   // Custom props for StyledCallToActionBlock
-// }
-
 const StyledCallToActionBlock = styled(Box)<BoxProps>`
   padding: 4rem 0;
   text-align: center;
@@ -23,7 +19,6 @@ const CallToActionBlock: React.FC = () => {
     <StyledCallToActionBlock>
       <Container maxWidth="md">
         {" "}
-        {/* Можно использовать md для более узкого блока, если нужно */}
         <Typography
           component="h2"
           sx={{

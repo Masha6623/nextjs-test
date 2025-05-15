@@ -18,7 +18,6 @@ import { ContactForm } from "@/features/contact-form/ui/ContactForm";
 
 const FOOTER_HEIGHT = "80px";
 
-// Обновленная "грандиозная" анимация
 const grandioseEntrance = keyframes`
   0% {
     opacity: 0;
@@ -37,7 +36,6 @@ const grandioseEntrance = keyframes`
   }
 `;
 
-// Обновленный стилизованный блок для сообщения об успехе
 const AnimatedResponseBox = styled(Box)<BoxProps>`
   text-align: center;
   padding: 2.5rem;
@@ -64,7 +62,6 @@ const AnimatedResponseBox = styled(Box)<BoxProps>`
   }
 `;
 
-// Стили для кнопки Home
 const HomeButton = styled(Button)<ButtonProps>`
   && {
     margin-top: 1rem;

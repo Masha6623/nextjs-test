@@ -11,10 +11,6 @@ import styled from "styled-components";
 import { type ContactFormData } from "../model/useContactForm";
 import { alpha } from "@mui/material/styles";
 
-// interface StyledTextFieldProps extends TextFieldProps {
-//   // Custom props for StyledTextField would go here
-// }
-
 const StyledTextField = styled(TextField)<TextFieldProps>`
   && {
     margin-bottom: 1.5rem;

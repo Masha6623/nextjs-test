@@ -86,7 +86,7 @@ export default function YouTubePlayer({ videoId, title }: YouTubePlayerProps) {
 
   const handleKeyDown = (event: React.KeyboardEvent<HTMLDivElement>) => {
     if (event.key === "Enter" || event.key === " ") {
-      event.preventDefault(); // Prevent scrolling on Space press
+      event.preventDefault();
       handlePlay();
     }
   };
@@ -115,7 +115,6 @@ export default function YouTubePlayer({ videoId, title }: YouTubePlayerProps) {
         style={{ backgroundImage: `url(${thumbnailUrl})` }}
       >
         <PlayButton aria-hidden="true" />{" "}
-        {/* Visually hidden icon, label is on parent */}
       </ThumbnailWrapper>
     </VideoWrapper>
   );

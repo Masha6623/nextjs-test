@@ -17,7 +17,6 @@ const animatedGradient = keyframes`
   100% { background-position: 0% 50%; }
 `;
 
-// Define theme-dependent gradient colors
 const lightGradientColors = [
   "#E91E63",
   "#673AB7",
@@ -25,7 +24,7 @@ const lightGradientColors = [
   "#4CAF50",
   "#FFC107",
   "#E91E63",
-]; // Added start color at end for smooth loop
+];
 const darkGradientColors = [
   "#F06292",
   "#9575CD",
